@@ -1,0 +1,38 @@
+{
+  "name": "mock-elasticsearch-kinesis-firehose",
+  "version": "1.0.0",
+  "description": "A mock for the kinesis firehose service which writes directly to elasticsearch",
+  "main": "src/app.js",
+  "scripts": {
+    "ci": "npm run lint",
+    "lint": "eslint .",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffAshton/mock-elasticsearch-kinesis-firehose.git"
+  },
+  "keywords": [
+    "elasticsearch",
+    "kinesis",
+    "firehose",
+    "mock"
+  ],
+  "author": "Jeff Ashton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeffAshton/mock-elasticsearch-kinesis-firehose/issues"
+  },
+  "homepage": "https://github.com/JeffAshton/mock-elasticsearch-kinesis-firehose#readme",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "cti-process-environment-variable-reader": "^1.1.1",
+    "elasticsearch": "^12.1.2",
+    "lodash": "^4.17.2",
+    "restify": "^4.3.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.1"
+  }
+}
