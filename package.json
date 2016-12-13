@@ -2,7 +2,7 @@
   "name": "mock-elasticsearch-kinesis-firehose",
   "version": "1.0.0",
   "description": "A mock for the kinesis firehose service which writes directly to elasticsearch",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
     "ci": "npm run lint",
     "lint": "eslint .",
