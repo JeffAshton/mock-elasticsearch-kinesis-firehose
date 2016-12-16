@@ -51,6 +51,7 @@ module.exports = function( server ) {
 					return next( esErr );
 				}
 
+				log.debug( `published ${ messages.length } messages` );
 				res.send( 200 );
 				return next();
 			});
