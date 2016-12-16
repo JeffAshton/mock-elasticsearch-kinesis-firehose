@@ -2,4 +2,9 @@
 *.log
 .eslintrc
 .gitignore
+.vs/
+bin/
+examples/
 node_modules/
+obj/
+typings/
