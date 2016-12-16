@@ -2,6 +2,9 @@
 *.log
 .eslintrc
 .gitignore
+*.njsproj
+*.sln
+Dockerfile
 .vs/
 bin/
 examples/
