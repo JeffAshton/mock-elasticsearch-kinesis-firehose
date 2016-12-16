@@ -3,6 +3,7 @@
 const _ = require( 'lodash' );
 const conf = require( '../conf.js' );
 const elasticsearch = require( 'elasticsearch' );
+const log = require( '../log.js' );
 const uuid = require( 'uuid' );
 
 const esClient = new elasticsearch.Client( {
@@ -51,7 +52,7 @@ module.exports = function( server ) {
 					return next( esErr );
 				}
 
-				log.debug( `published ${ messages.length } messages` );
+				log.debug( `published ${ messages.length } messages to ${ index }` );
 				res.send( 200 );
 				return next();
 			});
