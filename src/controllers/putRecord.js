@@ -57,7 +57,7 @@ module.exports = function( server ) {
 				return next();
 			});
 
-		} catch( err ) {
+		} catch ( err ) {
 			return next( err );
 		}
 	});

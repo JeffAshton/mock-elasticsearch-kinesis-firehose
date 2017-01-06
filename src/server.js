@@ -40,7 +40,7 @@ server.on( 'after', function( req, res, route, error ) {
 require( './controllers/putRecord.js' )( server );
 
 if( require.main === module ) {
-	
+
 	log.debug( 'opening http server' );
 	server.listen( conf.port, function() {
 		log.info( 'http server listening' );
