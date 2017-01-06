@@ -1,4 +1,4 @@
-FROM node:4-slim
+FROM node:4.7.1-slim
 
 ENV ELASTICSEARCH_URL "http://elasticsearch:9200"
 

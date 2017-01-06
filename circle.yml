@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 4.7.1
+  services:
+    - docker
+
+dependencies:
+  override:
+    - npm prune
+    - npm install
+
+test:
+  override:
+    - npm run ci
+    - npm run docker.build
+    - docker build .
