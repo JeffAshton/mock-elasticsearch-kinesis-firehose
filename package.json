@@ -5,6 +5,9 @@
   "main": "src/server.js",
   "scripts": {
     "ci": "npm run lint",
+    "docker.build": "docker build -t $DOCKER_BUILD_REGISTRY/mock-elasticsearch-kinesis-firehose:$DOCKER_BUILD_TAG .",
+    "docker.push": "docker push $DOCKER_BUILD_REGISTRY/mock-elasticsearch-kinesis-firehose:$DOCKER_BUILD_TAG",
+    "docker.buildAndPush": "npm run docker.build && npm run docker.push",
     "lint": "eslint .",
     "start": "node src/server.js"
   },

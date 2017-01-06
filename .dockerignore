@@ -5,10 +5,10 @@
 .gitignore
 *.njsproj
 *.sln
+circle.yml
 Dockerfile
 .vs/
 bin/
-examples/
 node_modules/
 obj/
 typings/
