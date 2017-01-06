@@ -11,6 +11,10 @@ module.exports = {
 		url: env.getRequired( 'ELASTICSEARCH_URL', 1 )
 	},
 
+	documents: {
+		defaultType: env.getOptional( 'DEFAULT_DOCUMENT_TYPE', 'record' )
+	},
+
 	port: env.getOptional( 'HTTP_PORT', 80 )
 
 };

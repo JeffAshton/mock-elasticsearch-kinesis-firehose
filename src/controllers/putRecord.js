@@ -24,7 +24,7 @@ function buildBulkIndex( index, messages ) {
 		body.push( {
 			index: {
 				_index: index,
-				_type: 'record',
+				_type: conf.documents.defaultType,
 				_id: uuid.v4()
 			}
 		});
